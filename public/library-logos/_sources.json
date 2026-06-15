@@ -1,0 +1,482 @@
+[
+  {
+    "id": "javascript",
+    "title": "JavaScript",
+    "source": "local:js_logo.png"
+  },
+  {
+    "id": "typescript",
+    "title": "TypeScript",
+    "source": "local:typescript.png"
+  },
+  {
+    "id": "python",
+    "title": "Python",
+    "source": "local:python.png"
+  },
+  {
+    "id": "go",
+    "title": "Go",
+    "source": "simpleicons:go"
+  },
+  {
+    "id": "rust",
+    "title": "Rust",
+    "source": "simpleicons:rust"
+  },
+  {
+    "id": "java",
+    "title": "Java",
+    "source": "local:java.png"
+  },
+  {
+    "id": "csharp",
+    "title": "C#",
+    "source": "local:csharp.png"
+  },
+  {
+    "id": "php",
+    "title": "PHP",
+    "source": "local:php.png"
+  },
+  {
+    "id": "ruby",
+    "title": "Ruby",
+    "source": "local:ruby.png"
+  },
+  {
+    "id": "kotlin",
+    "title": "Kotlin",
+    "source": "local:kotlin.png"
+  },
+  {
+    "id": "swift",
+    "title": "Swift",
+    "source": "local:swift.png"
+  },
+  {
+    "id": "cpp",
+    "title": "C++",
+    "source": "simpleicons:cplusplus"
+  },
+  {
+    "id": "sql",
+    "title": "SQL",
+    "source": "local:postgresql.png"
+  },
+  {
+    "id": "react",
+    "title": "React",
+    "source": "local:react.png"
+  },
+  {
+    "id": "nextjs",
+    "title": "Next.js",
+    "source": "simpleicons:nextdotjs"
+  },
+  {
+    "id": "vue",
+    "title": "Vue",
+    "source": "local:vue.png"
+  },
+  {
+    "id": "angular",
+    "title": "Angular",
+    "source": "local:angular.png"
+  },
+  {
+    "id": "svelte",
+    "title": "Svelte",
+    "source": "simpleicons:svelte"
+  },
+  {
+    "id": "astro",
+    "title": "Astro",
+    "source": "simpleicons:astro"
+  },
+  {
+    "id": "express",
+    "title": "Express",
+    "source": "simpleicons:express"
+  },
+  {
+    "id": "django",
+    "title": "Django",
+    "source": "simpleicons:django"
+  },
+  {
+    "id": "laravel",
+    "title": "Laravel",
+    "source": "simpleicons:laravel"
+  },
+  {
+    "id": "spring-boot",
+    "title": "Spring Boot",
+    "source": "simpleicons:springboot"
+  },
+  {
+    "id": "vscode",
+    "title": "Visual Studio Code",
+    "source": "local:vscode.png"
+  },
+  {
+    "id": "git",
+    "title": "Git",
+    "source": "local:git.png"
+  },
+  {
+    "id": "github",
+    "title": "GitHub",
+    "source": "local:github.png"
+  },
+  {
+    "id": "npm",
+    "title": "npm",
+    "source": "local:npm.png"
+  },
+  {
+    "id": "vite",
+    "title": "Vite",
+    "source": "simpleicons:vite"
+  },
+  {
+    "id": "webpack",
+    "title": "Webpack",
+    "source": "simpleicons:webpack"
+  },
+  {
+    "id": "postman",
+    "title": "Postman",
+    "source": "simpleicons:postman"
+  },
+  {
+    "id": "eslint",
+    "title": "ESLint",
+    "source": "simpleicons:eslint"
+  },
+  {
+    "id": "prettier",
+    "title": "Prettier",
+    "source": "simpleicons:prettier"
+  },
+  {
+    "id": "jest",
+    "title": "Jest",
+    "source": "simpleicons:jest"
+  },
+  {
+    "id": "figma",
+    "title": "Figma",
+    "source": "local:Figma.png"
+  },
+  {
+    "id": "material-design",
+    "title": "Material Design",
+    "source": "simpleicons:materialdesign"
+  },
+  {
+    "id": "sketch",
+    "title": "Sketch",
+    "source": "local:Sketch.png"
+  },
+  {
+    "id": "invision",
+    "title": "InVision",
+    "source": "local:InVision.png"
+  },
+  {
+    "id": "framer",
+    "title": "Framer",
+    "source": "simpleicons:framer"
+  },
+  {
+    "id": "webflow",
+    "title": "Webflow",
+    "source": "simpleicons:webflow"
+  },
+  {
+    "id": "storybook",
+    "title": "Storybook",
+    "source": "simpleicons:storybook"
+  },
+  {
+    "id": "zeroheight",
+    "title": "Zeroheight",
+    "source": "manual:zeroheight"
+  },
+  {
+    "id": "maze",
+    "title": "Maze",
+    "source": "simpleicons:maze"
+  },
+  {
+    "id": "hotjar",
+    "title": "Hotjar",
+    "source": "simpleicons:hotjar"
+  },
+  {
+    "id": "typography",
+    "title": "Practical Typography",
+    "source": "simpleicons:googledocs"
+  },
+  {
+    "id": "tailwindcss",
+    "title": "Tailwind CSS",
+    "source": "simpleicons:tailwindcss"
+  },
+  {
+    "id": "adobe-photoshop",
+    "title": "Adobe Photoshop",
+    "source": "local:AdobePhotoshop.png"
+  },
+  {
+    "id": "adobe-illustrator",
+    "title": "Adobe Illustrator",
+    "source": "local:AdobeIllustrator.png"
+  },
+  {
+    "id": "adobe-xd",
+    "title": "Adobe XD",
+    "source": "local:AdobeXD.png"
+  },
+  {
+    "id": "blender",
+    "title": "Blender",
+    "source": "local:Blender.png"
+  },
+  {
+    "id": "inkscape",
+    "title": "Inkscape",
+    "source": "local:Inkscape.png"
+  },
+  {
+    "id": "after-effects",
+    "title": "After Effects",
+    "source": "local:AdobeAfterEffects.png"
+  },
+  {
+    "id": "cinema4d",
+    "title": "Cinema 4D",
+    "source": "local:Cinema4D.png"
+  },
+  {
+    "id": "autodesk-maya",
+    "title": "Autodesk Maya",
+    "source": "local:AutodeskMaya.png"
+  },
+  {
+    "id": "openai",
+    "title": "OpenAI",
+    "source": "manual:openai-mark"
+  },
+  {
+    "id": "prompt-engineering",
+    "title": "Prompt Engineering",
+    "source": "manual:openai-mark"
+  },
+  {
+    "id": "hugging-face",
+    "title": "Hugging Face",
+    "source": "simpleicons:huggingface"
+  },
+  {
+    "id": "pytorch",
+    "title": "PyTorch",
+    "source": "simpleicons:pytorch"
+  },
+  {
+    "id": "tensorflow",
+    "title": "TensorFlow",
+    "source": "simpleicons:tensorflow"
+  },
+  {
+    "id": "scikit-learn",
+    "title": "scikit-learn",
+    "source": "simpleicons:scikitlearn"
+  },
+  {
+    "id": "langchain",
+    "title": "LangChain",
+    "source": "simpleicons:langchain"
+  },
+  {
+    "id": "jupyter",
+    "title": "Jupyter",
+    "source": "simpleicons:jupyter"
+  },
+  {
+    "id": "ollama",
+    "title": "Ollama",
+    "source": "simpleicons:ollama"
+  },
+  {
+    "id": "llamaindex",
+    "title": "LlamaIndex",
+    "source": "manual:llamaindex"
+  },
+  {
+    "id": "diataxis",
+    "title": "Diataxis",
+    "source": "simpleicons:readthedocs"
+  },
+  {
+    "id": "markdown",
+    "title": "Markdown",
+    "source": "simpleicons:markdown"
+  },
+  {
+    "id": "notion",
+    "title": "Notion",
+    "source": "simpleicons:notion"
+  },
+  {
+    "id": "obsidian",
+    "title": "Obsidian",
+    "source": "simpleicons:obsidian"
+  },
+  {
+    "id": "jira",
+    "title": "Jira",
+    "source": "simpleicons:jira"
+  },
+  {
+    "id": "linear",
+    "title": "Linear",
+    "source": "simpleicons:linear"
+  },
+  {
+    "id": "confluence",
+    "title": "Confluence",
+    "source": "simpleicons:confluence"
+  },
+  {
+    "id": "slack",
+    "title": "Slack",
+    "source": "manual:slack"
+  },
+  {
+    "id": "trello",
+    "title": "Trello",
+    "source": "simpleicons:trello"
+  },
+  {
+    "id": "miro",
+    "title": "Miro",
+    "source": "simpleicons:miro"
+  },
+  {
+    "id": "postgresql",
+    "title": "PostgreSQL",
+    "source": "local:postgresql.png"
+  },
+  {
+    "id": "docker",
+    "title": "Docker",
+    "source": "simpleicons:docker"
+  },
+  {
+    "id": "linux",
+    "title": "Linux",
+    "source": "simpleicons:linux"
+  },
+  {
+    "id": "bash",
+    "title": "Bash",
+    "source": "simpleicons:gnubash"
+  },
+  {
+    "id": "kubernetes",
+    "title": "Kubernetes",
+    "source": "simpleicons:kubernetes"
+  },
+  {
+    "id": "terraform",
+    "title": "Terraform",
+    "source": "simpleicons:terraform"
+  },
+  {
+    "id": "github-actions",
+    "title": "GitHub Actions",
+    "source": "local:github.png"
+  },
+  {
+    "id": "nginx",
+    "title": "Nginx",
+    "source": "simpleicons:nginx"
+  },
+  {
+    "id": "mongodb",
+    "title": "MongoDB",
+    "source": "local:mongodb.png"
+  },
+  {
+    "id": "redis",
+    "title": "Redis",
+    "source": "local:redis.webp"
+  },
+  {
+    "id": "mysql",
+    "title": "MySQL",
+    "source": "local:MySql.png"
+  },
+  {
+    "id": "sqlite",
+    "title": "SQLite",
+    "source": "local:sqlite.png"
+  },
+  {
+    "id": "html-codex",
+    "title": "HTML Codex",
+    "source": "local:html-5.png"
+  },
+  {
+    "id": "css-codex",
+    "title": "CSS Codex",
+    "source": "local:css-3.png"
+  },
+  {
+    "id": "react-codex",
+    "title": "React Codex",
+    "source": "local:react.png"
+  },
+  {
+    "id": "javascript-codex",
+    "title": "JavaScript Codex",
+    "source": "local:js_logo.png"
+  },
+  {
+    "id": "python-codex",
+    "title": "Python Codex",
+    "source": "local:python.png"
+  },
+  {
+    "id": "mdn",
+    "title": "MDN Web Docs",
+    "source": "simpleicons:mdnwebdocs"
+  },
+  {
+    "id": "freecodecamp",
+    "title": "freeCodeCamp",
+    "source": "simpleicons:freecodecamp"
+  },
+  {
+    "id": "stackoverflow",
+    "title": "Stack Overflow",
+    "source": "simpleicons:stackoverflow"
+  },
+  {
+    "id": "roadmapsh",
+    "title": "roadmap.sh",
+    "source": "simpleicons:roadmapdotsh"
+  },
+  {
+    "id": "devdocs",
+    "title": "DevDocs",
+    "source": "simpleicons:devdotto"
+  },
+  {
+    "id": "caniuse",
+    "title": "Can I Use",
+    "source": "manual:caniuse-mark"
+  }
+]

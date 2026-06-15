@@ -1,9 +1,565 @@
-.hideinit{
-    opacity: 0;
-    transition: opacity 2s ease;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap");
+
+.codex-library {
+  --ink: #25190f;
+  --deep-wood: #1d130c;
+  --wood: #4a2e19;
+  --leather: #6a4122;
+  --bronze: #b08a53;
+  --paper: #f4efe2;
+  --aged-paper: #d8c8a8;
+  --shadow: rgba(14, 8, 4, 0.48);
+  background:
+    linear-gradient(rgba(36, 22, 13, 0.88), rgba(23, 14, 8, 0.94)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 8px);
+  color: var(--paper);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.show{
-    opacity: 1;
+.codex-library::before {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(244, 239, 226, 0.09), transparent 24%),
+    radial-gradient(circle at 70% 30%, rgba(176, 138, 83, 0.08), transparent 30%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px);
+  content: "";
+  inset: 0;
+  mix-blend-mode: screen;
+  opacity: 0.75;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1;
 }
 
+.codex-library > * {
+  position: relative;
+  z-index: 2;
+}
+
+.grand-hall {
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 128px clamp(20px, 6vw, 96px) 60px;
+  position: relative;
+}
+
+.hall-overlay {
+  background:
+    linear-gradient(90deg, rgba(16, 8, 3, 0.92) 0%, rgba(19, 10, 5, 0.72) 44%, rgba(19, 10, 5, 0.28) 100%),
+    radial-gradient(circle at 35% 38%, rgba(194, 143, 72, 0.26), transparent 30%);
+  inset: 0;
+  position: absolute;
+}
+
+.hall-copy {
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+.seal,
+.section-kicker,
+.wing-heading span,
+.catalog-number,
+.manuscript span,
+.pick-list span {
+  color: var(--bronze);
+  display: inline-block;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.seal {
+  border: 1px solid rgba(216, 200, 168, 0.5);
+  border-radius: 999px;
+  padding: 9px 16px;
+}
+
+.hall-copy h1 {
+  color: #fff7e8;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: clamp(46px, 7vw, 96px);
+  font-weight: 700;
+  line-height: 0.95;
+  margin: 30px 0 24px;
+  max-width: 920px;
+  text-wrap: balance;
+}
+
+.hall-copy p {
+  color: #eadcc9;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.45;
+  max-width: 720px;
+}
+
+.hall-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.hall-actions a,
+.manuscript a {
+  background: rgba(244, 239, 226, 0.94);
+  border: 1px solid rgba(120, 76, 35, 0.48);
+  border-radius: 3px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.26);
+  color: var(--ink);
+  display: inline-flex;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 13px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 13px 18px;
+  text-decoration: none;
+  transition: transform 220ms ease, background 220ms ease;
+}
+
+.hall-actions a:hover,
+.manuscript a:hover {
+  background: #d8c8a8;
+  transform: translateY(-2px);
+}
+
+.hall-ledger {
+  background:
+    linear-gradient(135deg, rgba(244, 239, 226, 0.9), rgba(216, 200, 168, 0.86)),
+    repeating-linear-gradient(0deg, transparent 0 16px, rgba(92, 67, 40, 0.06) 16px 17px);
+  border: 1px solid rgba(92, 67, 40, 0.65);
+  bottom: 48px;
+  box-shadow: 0 24px 50px var(--shadow);
+  color: var(--ink);
+  max-width: 280px;
+  padding: 22px;
+  position: absolute;
+  right: clamp(20px, 6vw, 96px);
+  z-index: 3;
+}
+
+.hall-ledger span {
+  display: block;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 0.85;
+}
+
+.hall-ledger p {
+  border-bottom: 1px solid rgba(92, 67, 40, 0.25);
+  color: #5c4328;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+  margin: 8px 0 18px;
+  padding-bottom: 12px;
+}
+
+.hall-ledger p:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.building-map {
+  align-items: end;
+  background:
+    linear-gradient(rgba(244, 239, 226, 0.94), rgba(216, 200, 168, 0.92)),
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(92, 67, 40, 0.08) 22px 23px);
+  border-bottom: 8px solid var(--wood);
+  color: var(--ink);
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
+  padding: 76px clamp(20px, 6vw, 96px);
+}
+
+.building-map h2,
+.wing-heading h2 {
+  color: inherit;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: clamp(36px, 5vw, 70px);
+  font-weight: 700;
+  line-height: 0.98;
+  margin: 12px 0 0;
+}
+
+.building-map nav {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.building-map a {
+  background: rgba(255, 250, 236, 0.4);
+  border: 1px solid rgba(92, 67, 40, 0.35);
+  color: var(--ink);
+  min-height: 118px;
+  padding: 18px;
+  text-decoration: none;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.building-map a:hover {
+  background: rgba(255, 250, 236, 0.8);
+  transform: translateY(-3px);
+}
+
+.building-map a span {
+  color: #73512d;
+  display: block;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hall-routes a {
+  display: flex;
+  flex-direction: column;
+}
+
+.hall-routes a strong {
+  color: #2d2218;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 0.98;
+  margin-bottom: 12px;
+}
+
+.hall-routes a em {
+  color: #5c4328;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.quote-gallery {
+  background: var(--deep-wood);
+  border-bottom: 1px solid rgba(216, 200, 168, 0.14);
+  border-top: 1px solid rgba(216, 200, 168, 0.14);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 34px clamp(20px, 6vw, 96px);
+}
+
+.quote-gallery blockquote {
+  border-left: 2px solid var(--bronze);
+  color: #d8c8a8;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.archive-wing,
+.manuscript-room,
+.picks-room {
+  background:
+    linear-gradient(180deg, rgba(26, 16, 9, 0.97), rgba(37, 24, 14, 0.98)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 9px);
+  padding: 82px clamp(20px, 6vw, 96px);
+}
+
+.archive-wing:nth-of-type(2n + 1),
+.picks-room {
+  background:
+    linear-gradient(180deg, rgba(48, 29, 15, 0.96), rgba(24, 14, 8, 0.98)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 8px);
+}
+
+.wing-heading {
+  color: var(--paper);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: 34px;
+  max-width: 1120px;
+}
+
+.wing-heading span,
+.wing-heading h2,
+.wing-heading p {
+  grid-column: 1;
+}
+
+.wing-heading p {
+  color: #d8c8a8;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0;
+  max-width: 760px;
+}
+
+.wing-heading small {
+  align-self: start;
+  border: 1px solid rgba(216, 200, 168, 0.34);
+  color: #d8c8a8;
+  font-family: "Cinzel", "Georgia", serif;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  padding: 12px 16px;
+  text-transform: uppercase;
+}
+
+.slip-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.archive-slip {
+  background:
+    linear-gradient(135deg, rgba(244, 239, 226, 0.97), rgba(216, 200, 168, 0.94)),
+    repeating-linear-gradient(0deg, transparent 0 18px, rgba(92, 67, 40, 0.06) 18px 19px);
+  border: 1px solid rgba(92, 67, 40, 0.5);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-height: 310px;
+  padding: 22px;
+  position: relative;
+  text-decoration: none;
+  transform-origin: center bottom;
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.archive-slip::after {
+  border: 1px solid rgba(119, 53, 36, 0.32);
+  border-radius: 999px;
+  bottom: 18px;
+  color: rgba(119, 53, 36, 0.58);
+  content: "APPROVED";
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 18px;
+  transform: rotate(-9deg);
+}
+
+.archive-slip:hover {
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.34);
+  transform: translateY(-8px) rotate(-0.5deg);
+}
+
+.archive-slip strong {
+  color: #2d2218;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: 30px;
+  line-height: 1;
+  margin: 16px 0 12px;
+}
+
+.archive-slip p {
+  color: #5c4328;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 18px;
+}
+
+.archive-slip dl {
+  border-top: 1px solid rgba(92, 67, 40, 0.22);
+  display: grid;
+  gap: 10px;
+  margin: auto 0 0;
+  padding-top: 16px;
+}
+
+.archive-slip dl div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 56px 1fr;
+}
+
+.archive-slip dt {
+  color: #8b6a42;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.archive-slip dd {
+  color: #3b2a19;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.manuscript-room {
+  background:
+    linear-gradient(rgba(244, 239, 226, 0.93), rgba(216, 200, 168, 0.9)),
+    radial-gradient(circle at 20% 20%, rgba(92, 67, 40, 0.16), transparent 28%);
+  color: var(--ink);
+}
+
+.manuscript-room .wing-heading,
+.manuscript-room .wing-heading h2,
+.manuscript-room .wing-heading p {
+  color: var(--ink);
+}
+
+.manuscript-room .wing-heading span,
+.manuscript-room .wing-heading small {
+  color: #73512d;
+  border-color: rgba(92, 67, 40, 0.3);
+}
+
+.manuscript-shelf {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.manuscript {
+  background:
+    linear-gradient(105deg, #5c2f18 0%, #7d4a25 48%, #2d2218 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 12px 0 rgba(255, 255, 255, 0.08), 0 22px 42px rgba(61, 37, 18, 0.24);
+  color: var(--paper);
+  min-height: 270px;
+  padding: 22px;
+}
+
+.manuscript h3 {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: 36px;
+  line-height: 0.94;
+  margin: 44px 0 14px;
+}
+
+.manuscript p {
+  color: #eadcc9;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+}
+
+.manuscript div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.manuscript a {
+  box-shadow: none;
+  min-height: 38px;
+  padding: 10px 13px;
+}
+
+.pick-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pick-list a {
+  background: rgba(244, 239, 226, 0.08);
+  border: 1px solid rgba(216, 200, 168, 0.18);
+  color: var(--paper);
+  display: grid;
+  min-height: 230px;
+  padding: 22px;
+  text-decoration: none;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.pick-list a:hover {
+  background: rgba(244, 239, 226, 0.13);
+  transform: translateY(-5px);
+}
+
+.pick-list strong {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: 32px;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.pick-list em {
+  color: #d8c8a8;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+  margin: 7px 0 18px;
+}
+
+.pick-list p {
+  color: #d8c8a8;
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.38;
+  margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .grand-hall {
+    min-height: 860px;
+  }
+
+  .hall-ledger {
+    bottom: auto;
+    margin-top: 34px;
+    position: relative;
+    right: auto;
+  }
+
+  .building-map {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .wing-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .wing-heading small {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .grand-hall,
+  .building-map,
+  .archive-wing,
+  .manuscript-room,
+  .picks-room,
+  .quote-gallery {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .grand-hall {
+    padding-top: 106px;
+  }
+
+  .hall-copy h1 {
+    font-size: 46px;
+  }
+
+  .hall-actions a {
+    width: 100%;
+  }
+
+  .building-map nav {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-slip {
+    min-height: auto;
+  }
+}

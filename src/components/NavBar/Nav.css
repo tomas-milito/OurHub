@@ -1,20 +1,80 @@
-.custombutton{
-    display: none;
+.archive-nav {
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(29, 19, 12, 0.88), rgba(29, 19, 12, 0.64)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 9px);
+  border-bottom: 1px solid rgba(216, 200, 168, 0.18);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  left: 0;
+  padding: 12px clamp(18px, 4vw, 64px);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 50;
 }
 
+.archive-brand {
+  align-items: center;
+  color: #f4efe2;
+  display: inline-flex;
+  font-family: "Cinzel", "Georgia", serif;
+  flex: 0 0 auto;
+  text-decoration: none;
+}
 
+.archive-brand img {
+  display: block;
+  height: clamp(44px, 5vw, 62px);
+  max-width: min(270px, 58vw);
+  object-fit: contain;
+  width: auto;
+}
 
+.archive-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
 
+.archive-nav nav a {
+  border: 1px solid transparent;
+  color: #d8c8a8;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 12px;
+  padding: 9px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
 
+.archive-nav nav a:hover {
+  background: rgba(244, 239, 226, 0.08);
+  border-color: rgba(216, 200, 168, 0.28);
+  color: #f4efe2;
+}
 
+@media screen and (max-width: 760px) {
+  .archive-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  .archive-brand img {
+    height: 48px;
+    max-width: 72vw;
+  }
 
+  .archive-nav nav {
+    justify-content: flex-start;
+  }
 
-@media screen and (max-width:991px){
-    .custombutton{
-        display: block;
-        background-color: var(--transparent);
-        height: auto;
-        border: 0;
-    }
+  .archive-nav nav a {
+    font-size: 11px;
+    padding: 7px 8px;
+  }
 }
